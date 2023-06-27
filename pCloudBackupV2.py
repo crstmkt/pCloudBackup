@@ -3,10 +3,12 @@ import subprocess
 
 # Rclone-Konfiguration
 remote_name = "pcloud"
-# remote_path = "webdav_remote:path"
+
 
 # Array mit den hochzuladenden Ordnern
-folders_to_upload = ["/opt/containers/vaultwarden", "/home/chris/TestUpload"]
+folders_to_upload = [
+    "/opt/containers/",
+]
 
 
 def synchronize_folders(folder):
